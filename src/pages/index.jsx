@@ -81,7 +81,7 @@ export default function Home() {
             />
             <h2 className='_font-arial text-2xl pt-2 italic'>Platzi Eternal Student</h2>
           </div>
-          <h3 className='_font-nova-round font-bold italic text-xl '>Nerver Stop Learner</h3>
+          <h3 className='_font-nova-round font-bold italic text-xl '>Nerver Stop Learning</h3>
         </div>
         <SocialIcons />
       </main>
