@@ -7,12 +7,7 @@ export default function Home() {
       <Head>
         <title>Cris Page</title>
         <link rel='icon' href='/favicon.ico' />
-        {/* <title>Cristian Caraballo - Frontend Developer with React.js | Next.js /</title> */}
-        <meta
-          key='title'
-          name='title'
-          content='Cristian Caraballo - Frontend Developer with React.js | Next.js '
-        />
+        <meta key='title' name='title' content='Cristian Caraballo - Frontend Developer with React.js | Next.js ' />
         <meta
           key='description'
           name='description'
@@ -31,11 +26,7 @@ export default function Home() {
           property='og:description'
           content='Desarrollador Web especialista en Frontend Development. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
         />
-        <meta
-          key='og:image'
-          property='og:image'
-          content='https://cris-page.vercel.app/assets/meta-image.jpg'
-        />
+        <meta key='og:image' property='og:image' content='https://cris-page.vercel.app/assets/meta-image.jpg' />
 
         <meta key='twitter:card' property='twitter:card' content='summary_large_image' />
         <meta key='twitter:url' property='twitter:url' content='https://cris-page.vercel.app/' />
@@ -56,7 +47,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className='flex flex-col items-center text-center p-4 min-h-screen'>
+      <main className='flex flex-col justify-center items-center text-center p-4 min-h-screen'>
         <div className=''>
           <h2 className='_font-grand-hotel text-5xl'>Cristian</h2>
         </div>
@@ -81,7 +72,7 @@ export default function Home() {
             />
             <h2 className='_font-arial text-2xl pt-2 italic'>Platzi Eternal Student</h2>
           </div>
-          <h3 className='_font-nova-round font-bold italic text-xl '>Nerver Stop Learning</h3>
+          <h3 className='_font-nova-round font-bold italic text-xl '>Lifelong Learner</h3>
         </div>
         <SocialIcons />
       </main>

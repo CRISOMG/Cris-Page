@@ -3,7 +3,7 @@ import { GithubIcon, TwitterIcon, PlatziIcon, LinkedinIcon } from '../components
 export default function SocialIcons() {
   return (
     <div className='flex justify-around items-center mx-auto w-full max-w-sm h-32 '>
-      <a href='https://twitter.com/CrisJCaraballoG' target='_blank' rel='noopener noreferrer'>
+      <a href='https://twitter.com/_crisomg' target='_blank' rel='noopener noreferrer'>
         <TwitterIcon />
       </a>
       <a href='https://platzi.com/@CrisOMG/' target='_blank' rel='noopener noreferrer'>
