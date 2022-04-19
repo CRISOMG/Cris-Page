@@ -26,7 +26,7 @@ export default function Home() {
           property='og:description'
           content='Desarrollador Web especialista en Frontend Development. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
         />
-        <meta key='og:image' property='og:image' content='https://cris-page.vercel.app/assets/meta-image.jpg' />
+        <meta key='og:image' property='og:image' content='https://cris-page.vercel.app/assets/meta-image.png' />
 
         <meta key='twitter:card' property='twitter:card' content='summary_large_image' />
         <meta key='twitter:url' property='twitter:url' content='https://cris-page.vercel.app/' />
