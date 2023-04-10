@@ -11,7 +11,7 @@ export default function Home() {
         <meta
           key='description'
           name='description'
-          content='Desarrollador Web especialista en Frontend Development. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
+          content='Desarrollador de Aplicaciones FullStack MERN | Next.js | Nest.js. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
         />
 
         <meta key='og:type' property='og:type' content='website' />
@@ -19,12 +19,12 @@ export default function Home() {
         <meta
           key='og:title'
           property='og:title'
-          content='Cristian Caraballo - Frontend Developer with React.js | Next.js '
+          content='Cristian Caraballo - FullStack MERN | Next.js | Nest.js '
         />
         <meta
           key='og:description'
           property='og:description'
-          content='Desarrollador Web especialista en Frontend Development. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
+          content='Desarrollador de Aplicaciones FullStack MERN | Next.js | Nest.js. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
         />
         <meta key='og:image' property='og:image' content='https://cris-page.vercel.app/assets/meta-image.png' />
 
@@ -33,12 +33,12 @@ export default function Home() {
         <meta
           key='twitter:title'
           property='twitter:title'
-          content='Cristian Caraballo - Frontend Developer with React.js | Next.js '
+          content='Cristian Caraballo - FullStack MERN | Next.js | Nest.js '
         />
         <meta
           key='twitter:description'
           property='twitter:description'
-          content='Desarrollador Web especialista en Frontend Development. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
+          content='Desarrollador de Aplicaciones FullStack MERN | Next.js | Nest.js. Tecnologías/Metodologías: MERN & JAM Stack. visita mi pagina para saber más...'
         />
         <meta
           key='twitter:image'
@@ -61,7 +61,7 @@ export default function Home() {
           />
         </div>
         <div className='text-center mb-4'>
-          <h1 className='_font-grand-hotel text-5xl'>Frontend Developer</h1>
+          <h1 className='_font-grand-hotel text-5xl'>Javascript Developer</h1>
           <div className='flex ml-4'>
             <img
               className='object-contain -mb-1'
