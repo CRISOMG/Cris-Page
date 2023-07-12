@@ -3,16 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --grand-hotel: 'Grand Hotel', cursive;
-  --nova-round: 'Nova Round', cursive;
+  --grand-hotel: "Grand Hotel", cursive;
+  --nova-round: "Nova Round", cursive;
 }
+
+.cris-main-bg-section {
+  @apply bg-gradient-to-b from-amber-500 to-amber-600;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+} */
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
