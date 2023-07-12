@@ -6,15 +6,22 @@
     "start": "next start",
     "dev": "next dev",
     "build": "next build",
-    "build:tailwind": "tailwind build tailwind.css -o src/styles/tailwind.build.css"
+    "build:tailwind": "tailwind build tailwind.css -o src/styles/tailwind.build.css",
+    "upgrade-deps": "yarn-upgrade-all"
   },
   "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "next": "10.0.3",
-    "postcss": "^8.1.14",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "styled-jsx-plugin-postcss": "^4.0.0",
-    "tailwindcss": "^2.0.1"
+    "autoprefixer": "^10.4.14",
+    "next": "^13.4.9",
+    "postcss": "^8.4.25",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-jsx-plugin-postcss": "^4.0.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "engines": {
+    "node": "v18"
+  },
+  "devDependencies": {
+    "yarn-upgrade-all": "^0.7.2"
   }
 }
