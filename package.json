@@ -10,6 +10,8 @@
     "upgrade-deps": "yarn-upgrade-all"
   },
   "dependencies": {
+    "@types/google-one-tap": "^1.2.2",
+    "@types/google.accounts": "^0.0.7",
     "autoprefixer": "^10.4.14",
     "next": "^13.4.9",
     "postcss": "^8.4.25",
@@ -22,6 +24,9 @@
     "node": "v18"
   },
   "devDependencies": {
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "typescript": "5.1.6",
     "yarn-upgrade-all": "^0.7.2"
   }
 }
