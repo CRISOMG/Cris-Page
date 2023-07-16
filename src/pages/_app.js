@@ -6,32 +6,18 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (window) {
       const handleGoogle = async (response) => {
-        console.log(response.credential);
-        // setLoading(true);
-        // fetch(url, {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-
-        //   body: JSON.stringify({ credential: response.credential }),
-        // })
-        //   .then((res) => {
-        //     setLoading(false);
-
-        //     return res.json();
-        //   })
-        //   .then((data) => {
-        //     if (data?.user) {
-        //       localStorage.setItem("user", JSON.stringify(data?.user));
-        //       window.location.reload();
-        //     }
-
-        //     throw new Error(data?.message || data);
-        //   })
-        //   .catch((error) => {
-        //     setError(error?.message);
-        //   });
+        try {
+          const { credential: token } = response;
+          const res = await fetch("http://localhost:8000/auth/google-token", {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+          const data = await res.json();
+          console.log(data);
+        } catch (error) {
+          console.error(error);
+        }
       };
       window.onload = function () {
         if (window.google) {
@@ -39,7 +25,15 @@ function MyApp({ Component, pageProps }) {
             client_id: process.env.NEXT_PUBLIC_GOOGLE_ID,
             callback: handleGoogle,
           });
-          google.accounts.id.prompt();
+          google.accounts.id.prompt((notification) => {
+            if (
+              notification.isNotDisplayed() ||
+              notification.isSkippedMoment()
+            ) {
+              document.cookie = `g_state=;path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT`;
+              google.accounts.id.prompt();
+            }
+          });
         }
       };
     }
