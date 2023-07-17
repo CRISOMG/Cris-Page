@@ -101,6 +101,14 @@ export default function Home() {
             </h3>
           </div>
           <SocialIcons />
+          <button
+            className="p-4 bg-slate-400 border rounded "
+            onClick={() =>
+              (window.location.href = "http://localhost:8000/auth/google")
+            }
+          >
+            Auth Google
+          </button>
         </section>
 
         <hr className="snap-mandatorysnap-y snap-start" />
