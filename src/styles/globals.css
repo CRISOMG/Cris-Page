@@ -24,6 +24,30 @@ html {
   overflow: hidden;
 } */
 
+@keyframes pulse-end {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0);
+  }
+}
+@keyframes pulse {
+  0% {
+    filter: brightness(0);
+  }
+  70% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0);
+  }
+}
+
+.pulse:hover {
+  animation: pulse-end;
+}
+
 html,
 body {
   padding: 0;
